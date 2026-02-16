@@ -1,0 +1,29 @@
+[project]
+name = "localagent-rag"
+version = "0.1.0"
+description = "Agentic RAG system with local LLMs"
+authors = [
+    {name = "Miguel Lopez",email = "mmontielpz@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = "^3.11"
+dependencies = [
+    "fastapi (>=0.129.0,<0.130.0)",
+    "uvicorn (>=0.40.0,<0.41.0)",
+    "langchain (>=1.2.10,<2.0.0)",
+    "langgraph (>=1.0.8,<2.0.0)",
+    "chromadb (>=1.5.0,<2.0.0)",
+    "sentence-transformers (>=5.2.2,<6.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.2"
+black = "^26.1.0"
+isort = "^7.0.0"
+
